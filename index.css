@@ -1,0 +1,331 @@
+*, *:before, *:after  {
+  box-sizing: border-box;
+  padding: 0; margin: 1; border: 0;
+}
+
+body{
+  font-family: 'montserrat', sans-serif;
+  color: #1b1b1c;
+  background-color: #222224;
+/*  background: url(image/fon.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;*/
+}
+
+
+#header{
+  width: auto;    
+  height: 100px;    
+  background-color: #1b1b1c;  
+  margin-bottom: 10px;    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 15px;
+  box-sizing: border-box;
+   border: 2px solid #c129f1;
+}
+
+ .body1-01{
+  background: url(image/ofis.gif) center center no-repeat;
+  background-size: cover;
+  padding: 75px 0 145px 0;
+ }
+
+ .body1{
+  color: white;
+  text-align: center;
+  max-width: 1080;
+  min-width: 320;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+ }
+
+.icon_menu{
+  width: 160px;    
+  height: 80px; 
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.icon_menu:hover .dropbtn {background-color: #3e8e41;}
+
+#navbar a{
+ text-decoration: none; 
+ color: white; 
+ border-bottom: 1px solid;
+ border-bottom-color: rgba(15, 122, 252, 0.2);
+ display: inline-block;
+ margin: 15px;
+}
+
+a:hover{
+  text-decoration: none;
+  color:#cf0000;
+  border-bottom-color: rgba(208, 64, 0, 0.2);
+  }
+
+  a:visited {
+  text-decoration: none;
+  color: red;
+  border-bottom-color: rgba(128, 0, 128, 0.2);
+}
+
+form {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #c129f1;
+}
+
+h1,h2,h3{
+  text-align: center;
+  color: white;
+}
+
+p,li,tr{
+  color: white;
+}
+
+
+
+ table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .faq {
+            margin-top: 30px;
+        }
+
+        .faq h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+footer {
+background-color: #1b1b1ck;
+color: #1b1b1ck;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+}
+
+#foot{
+  background-color: #1b1b1ck;
+}
+
+#navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #c129f1;
+        width: auto;
+        text-align: center;
+        background-color: #1b1b1c;
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #fff;
+        padding: 10px 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: auto;
+      }
+      #navbar a:hover {
+        background-color: #c129f1;
+      }
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #222224;
+    padding: 20px;
+}
+
+p, li{
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    display: flex;/*флексбокс сетка*/
+    flex-direction: column;/*направление главной оси*/
+    justify-content: flex-end;/*элементы в конце контейнера*/
+    min-height: 100vh;
+}
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #1b1b1c;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+    border: 2px solid #c129f1;
+    border-radius: 20px 5px;
+}
+
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+    display: inline;
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+.menu li a:hover {
+    border-radius: 20px 5px;
+    background-color: #D7A152;
+}
+
+.social li a:hover {
+    border-radius: 5px 5px;
+    background-color: #D7A152;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+* {box-sizing: border-box;}
+.gradient-border {
+  width: 720px;
+  margin: 50px auto 0;
+}
+.gradient-border img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 15px solid;
+  border-image: linear-gradient(135deg, #c129f1 40%, #11c7f6 70%);
+  border-image-slice: 1;
+}
+
+.sad{
+     max-width: 80%;
+     background-color: #1b1b1c;
+     margin-left: 10%;
+     margin-right: 10%;
+     border: 4px solid #c129f1;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 2%;
+ }
+
+ html {
+  scroll-behavior: smooth;
+}
